@@ -1,6 +1,6 @@
 let books = [];
 
-fetch('books.json')
+fetch('booklist.json')
   .then(res => res.json())
   .then(data => books = data);
 
