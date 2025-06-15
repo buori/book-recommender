@@ -11,7 +11,7 @@ function recommend() {
 
   const matches = books.filter(book =>
     book.title.includes(input) ||
-    book.keywords.some(k => k.includes(input))
+    book.keywords.includes(k => k.includes(input))
   );
 
   matches.forEach(book => {
